@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+      
+  <div class="mainContainer1" id="mainContainer1"> 
+    <div class="icon"><img src="images/icon-star.svg"  width="13px" height="13px" alt="icone estrela"></div>
+    <h1 class="titleOne">How did we do?</h1>
+
+    <p class="textContent1">Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+      <div class="listContainer">
+        <button  class="itemList" id="itemList1" onclick="numOne()">1</button >
+        <button class="itemList" id="itemList2" onclick="numTwo()">2</button>
+        <button  class="itemList" id="itemList3" onclick="numThree()">3</button >
+        <button class="itemList" id="itemList4" onclick="numFour()">4</button >
+        <button class="itemList" id="itemList5"  onclick="numFive()">5</button >
+        </div>
+
+    <button class="submitButton" onclick="changePage()" >SUBMIT</button>
+  </div>
+
+  <div class="mainContainer2" id="mainContainer2">
+    <!-- Thank you state start -->
+    <div class="imgCell"><img src="images/illustration-thank-you.svg" alt=""
+    ></div>
+    <div class="classaddRatingContainer"><h3 class="addRating"> You selected <span id="ratingHere"></span>out of 5</h3></div>
+
+    <h1 class="titleTwo">Thank you!</h1>
+
+   <p class="textContent2">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+    <!-- Thank you state end -->
+
+  </div>
+ 
+ 
+</body>
+</html>
